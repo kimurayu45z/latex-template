@@ -1,0 +1,57 @@
+{
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.formatOnSave": false,
+  "[tex]": {
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+  },
+  "[latex]": {
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+  },
+  "latex-workshop.intellisense.package.enabled": true,
+  "latex-workshop.latex.clean.fileTypes": [
+    "*.aux",
+    "*.bbl",
+    "*.blg",
+    "*.idx",
+    "*.ind",
+    "*.lof",
+    "*.lot",
+    "*.out",
+    "*.toc",
+    "*.acn",
+    "*.acr",
+    "*.alg",
+    "*.glg",
+    "*.glo",
+    "*.gls",
+    "*.ist",
+    "*.fls",
+    "*.log",
+    "*.fdb_latexmk",
+    "*.snm",
+    "*.nav",
+    "*.dvi",
+    "*.synctex.gz"
+  ],
+  "latex-workshop.latex.outDir": "out",
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk",
+      "tools": [
+        "latexmk"
+      ]
+    },
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-silent",
+        "-outdir=%OUTDIR%",
+        "%DOC%"
+      ],
+    },
+  ],
+}
